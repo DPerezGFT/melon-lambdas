@@ -25,6 +25,24 @@ public class Main {
             System.out.println(bailan);
         }
 
+        List<Melon> found = Filters.filterByWeight(melons, 1200);
+        System.out.println("Lista filtrada de peso 1200:");
+        for (Melon founds : found){
+            System.out.println(founds);
+        }
+
+        List<Melon> heavier = Filters.filterByHeavier(melons, 1200);
+        System.out.println("Lista filtrada de peso mayor o igual a 1200:");
+        for (Melon heavy : heavier){
+            System.out.println(heavy);
+        }
+
+        List<Melon> lighter = Filters.filterByLighter(melons, 1200);
+        System.out.println("Lista filtrada de peso menor o igual a 1200:");
+        for (Melon light : lighter){
+            System.out.println(light);
+        }
+
     }
 
 
